@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[100],n,i,l=0,c=0,t,s;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+{
+    if(a[i]%2==0)
+    {
+        c++;
+        t=a[i];
+    }
+    else{
+        l++;
+        s=a[i];
+    }
+}
+if(l==1)
+{
+    printf("%d",s);
+}
+else
+{
+    printf("%d",t);
+}
+getch();
+}
